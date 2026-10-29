@@ -3,7 +3,7 @@ function read() {
   try {
     return JSON.parse(localStorage.getItem(STORAGE_KEY)) || sampleRequests();
   } catch {
-    return sampleRequests();
+    return [];
   }
 }
 
