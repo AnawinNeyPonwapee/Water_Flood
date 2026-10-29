@@ -1,0 +1,124 @@
+/* filter chips */
+.chips {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+}
+.chip {
+  flex: none;
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--white);
+  font-size: 0.875rem;
+}
+.chip[aria-pressed="true"] {
+  background: var(--text);
+  background-color: #0080dc;
+  color: var(--white);
+}
+
+/* request cards */
+.card {
+  margin-bottom: 10px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--white);
+  cursor: pointer;
+}
+.card.open {
+  border-color: var(--text);
+}
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+.card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card-title i {
+  margin-right: 8px;
+  color: var(--gray);
+}
+.card-note {
+  margin: 6px 0 0;
+  font-weight: 400;
+}
+.card-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 6px;
+  color: var(--gray);
+  font-size: 0.8125rem;
+}
+.card-info i {
+  margin-right: 4px;
+  color: #7b7c7d;
+}
+.card-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.empty {
+  padding: 32px 8px;
+  text-align: center;
+  color: #7b7c7d;
+}
+
+.badge {
+  flex: none;
+  padding: 2px 10px;
+  border-radius: 999px;
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.badge.wait {
+  background: var(--red);
+}
+.badge.going {
+  background: var(--yellow);
+}
+.badge.done {
+  background: var(--green);
+}
+
+/* map pins */
+.pin {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  font-size: 0.95rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease;
+}
+.pin.wait {
+  background: var(--red);
+}
+.pin.going {
+  background: var(--yellow);
+}
+.pin.done {
+  background: var(--green);
+  opacity: 0.7;
+}
+.pin.selected {
+  transform: scale(1.25);
+  border-color: var(--text);
+}
+.pin.pending {
+  background: var(--text);
+}

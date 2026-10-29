@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Water Flood | Anawin</title>
+  <link rel="icon" href="/img/WaterFlood-Logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div>
+      <h1>ระบบช่วยเหลือผู้ประสบภัยน้ำท่วม</h1>
+      <p class="muted">สำหรับขอความช่วยเหลือน้ำท่วม | Demo Version</p>
+    </div>
+    <div class="count">
+      <strong id="waitCount">0</strong>
+      <span>จำนวนขอความช่วยเหลือ</span>
+    </div>
+  </header>
+
+  <section class="map-box">
+    <div id="map"></div>
+    <div class="hint" id="hint" hidden>แตะบนแผนที่เพื่อปักหมุดตำแหน่งของคุณ</div>
+  </section>
+
+  <main class="panel" id="panel"></main>
+
+  <footer class="footer">
+    <span class="muted">Develop By. Anawin Ponwapee <br>นักเรียนชั้นมัธยมศึกษาปีที่6 <br>โรงเรียนอรัญประเทศ</span>
+    <button class="link" data-action="reset">ล้างข้อมูลและเริ่มใหม่</button>
+  </footer>
+
+  <nav class="tabs">
+    <button data-action="tab" data-tab="map"><i class="fa-solid fa-location-dot"></i>แผนที่</button>
+    <button data-action="tab" data-tab="help"><i class="fa-solid fa-star-of-life"></i>ขอความช่วยเหลือ</button>
+  </nav>
+
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/sample-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
