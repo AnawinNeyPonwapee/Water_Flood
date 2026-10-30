@@ -71,7 +71,7 @@ function formHtml(need, point) {
   return `
     <form id="helpForm" novalidate>
       <div class="field">
-        <span class="label">ต้องการอะไร</span>
+        <span class="label">ต้องการให้ช่วยเหลืออะไร</span>
         <div class="choices">${choices}</div>
       </div>
       <div class="field">

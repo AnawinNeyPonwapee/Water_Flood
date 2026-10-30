@@ -138,8 +138,8 @@ h1 {
   font-weight: 500;
 }
 .btn-dark {
-  background: var(--text);
-  border-color: var(--text);
+  background: #ff591d;
+  border-color: #ffd49f;
   color: var(--white);
 }
 .btn-red {

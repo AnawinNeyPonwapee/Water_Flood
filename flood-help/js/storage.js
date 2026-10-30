@@ -1,7 +1,7 @@
 // เก็บคำขอไว้ใน localStorage จะต่อ backend ทีหลัง 
 function read() {
   try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || sampleRequests();
+    return JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
   } catch {
     return [];
   }
